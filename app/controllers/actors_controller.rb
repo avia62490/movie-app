@@ -5,6 +5,6 @@ class ActorsController < ApplicationController
   end
 
   def show
-    render json: {me: "show working"}
+    render json: Actor.find_by(id: params[:id])
   end
 end
