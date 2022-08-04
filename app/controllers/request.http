@@ -2,3 +2,25 @@ GET http://localhost:3000/actors
 
 ###
 GET http://localhost:3000/actors/5
+
+###
+GET http://localhost:3000/movies/3
+
+###
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+  "title": "Die Hard",
+  "year": 1988,
+  "plot": "John McClane shoots bad guys"
+}
+
+###
+PATCH http://localhost:3000/movies/5
+Content-Type: application/json
+
+{
+
+  "plot": "John McClane shoots bad guys at the airport, and blows up a plane full of bad guys"
+}
