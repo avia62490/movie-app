@@ -4,6 +4,27 @@ GET http://localhost:3000/actors
 GET http://localhost:3000/actors/5
 
 ###
+POST http://localhost:3000/actors
+Content-Type: application/json
+
+{
+  "first_name": "Matt",
+  "last_name": "Damon",
+  "known_for": "The Bourne Identity"
+}
+
+###
+PATCH http://localhost:3000/actors/16
+Content-Type: application/json
+
+{
+  "first_name": "Matt",
+  "last_name": "Damon",
+  "known_for": "The Bourne Identity"
+}
+
+
+###
 GET http://localhost:3000/movies/3
 
 ###
@@ -21,6 +42,8 @@ PATCH http://localhost:3000/movies/5
 Content-Type: application/json
 
 {
-
   "plot": "John McClane shoots bad guys at the airport, and blows up a plane full of bad guys"
 }
+
+###
+DELETE http://localhost:3000/movies/6
