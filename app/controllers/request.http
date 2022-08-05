@@ -8,9 +8,10 @@ POST http://localhost:3000/actors
 Content-Type: application/json
 
 {
-  "first_name": "Matt",
-  "last_name": "Damon",
-  "known_for": "The Bourne Identity"
+  "first_name": "Aubrey",
+  "last_name": "Plaza",
+  "known_for": "Parks and Rec",
+  "gender": "female"
 }
 
 ###
