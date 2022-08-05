@@ -23,6 +23,8 @@ Content-Type: application/json
   "known_for": "The Bourne Identity"
 }
 
+###
+DELETE http://localhost:3000/actors/14
 
 ###
 GET http://localhost:3000/movies/3
@@ -32,17 +34,22 @@ POST http://localhost:3000/movies
 Content-Type: application/json
 
 {
-  "title": "Die Hard",
-  "year": 1988,
-  "plot": "John McClane shoots bad guys"
+  "title": "Idiocracy",
+  "year": 2006,
+  "plot": "A guy of average intelligence wakes up in the future and society has become so dumb that he is considered a genius",
+  "director": "Mike Judge"
 }
 
 ###
-PATCH http://localhost:3000/movies/5
+PATCH http://localhost:3000/movies/8
 Content-Type: application/json
 
 {
-  "plot": "John McClane shoots bad guys at the airport, and blows up a plane full of bad guys"
+  "title": "Dumb and Dumber",
+  "year": 1994,
+  "plot": "Two idiots go on a road trip to return a lost briefcase to a woman",
+  "director": "Peter Farrelly",
+  "english": true
 }
 
 ###
